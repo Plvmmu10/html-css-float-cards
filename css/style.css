@@ -47,13 +47,13 @@ header {
 .card {
     background-color: var(--card-bg);
     width: calc(100% / 3 - ( 2rem ));
-    margin-right: 1rem;
+    margin-right: 2rem;
     margin-top: 3rem;
     text-align: left;
-    box-shadow: .1rem .1rem .5rem #dedede,
-        -.1rem -.1rem .5rem #dedede,
-        .1rem -.1rem .5rem #dedede,
-        -.1rem .1rem .5rem #dedede;
+    box-shadow: .1rem .1rem .5rem #b4b4b4,
+        -.1rem -.1rem .5rem #b4b4b4,
+        .1rem -.1rem .5rem #b4b4b4,
+        -.1rem .1rem .5rem #b4b4b4;
     min-width: 10em;
 }
 
