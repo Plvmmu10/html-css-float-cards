@@ -1,37 +1,82 @@
 /* General */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Fredoka', sans-serif;
 }
 
 /* color panel */
 
-:root{
+:root {
     --card-bg: #0f0e17;
     --title: #e53170;
-    --main-bg: #fffffe;
+    --email: #2295d8;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* container config */
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
+.container {
     text-align: center;
+    margin: 0 auto;
+    width: 70%;
 }
+
 /* header config */
-header{
+header {
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
-h1{
-    color: var(--title)
+.title {
+    color: var(--title);
 }
 
+/* main config */
 
+/* card config */
+.card {
+    background-color: var(--card-bg);
+    width: calc(100% / 3 - ( 2rem ));
+    margin-right: 1rem;
+    margin-top: 3rem;
+    text-align: left;
+    box-shadow: .1rem .1rem .5rem #dedede,
+        -.1rem -.1rem .5rem #dedede,
+        .1rem -.1rem .5rem #dedede,
+        -.1rem .1rem .5rem #dedede;
+    min-width: 10em;
+}
+
+.name,.qualify {
+    color: white;
+}
+
+.email {
+    color: var(--email);
+}
+
+.info {
+    padding-top: 1rem;
+    float: left;
+}
+
+/* img config */
+img {
+    width: 6rem;
+    margin-right: 1rem;
+}
+
+/* float config */
+.left {
+    float: left;
+}
